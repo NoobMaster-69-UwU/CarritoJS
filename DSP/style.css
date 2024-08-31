@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.todo {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.carrito {
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito img {
+    width: 30px;
+}
+
+#contador-carrito {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.lista-productos {
+    flex: 1;
+}
+
+.producto {
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.superposicion-carrito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.items-carrito {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.items-carrito li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-carrito .controles-item {
+    display: flex;
+    align-items: center;
+}
+
+.items-carrito img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.controles-item button {
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.controles-item button:hover {
+    background-color: #bbb;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.cerrar-carrito {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cerrar-carrito:hover {
+    color: red;
+}
